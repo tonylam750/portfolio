@@ -1,12 +1,34 @@
 
+'use client'
 import Image from "next/image";
+import { TypeAnimation } from 'react-type-animation';
+
+
+
+
 
 export default function HeroSection() {
     return (
-        <section>
+        <section className="pt-4">
             <div className="grid grid-cols-1 sm:grid-cols-12">
                 <div className="col-span-7 place-self-center text-center sm:text-left">
-                    <h1 className="text-white mb-4 text-4xl sm:text-5lg lg:text-6xl font-extrabold" ><span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ">Hei, jeg er{" "}</span> Tony</h1>
+                    <h1 className="text-white mb-4 text-4xl sm:text-5lg lg:text-6xl font-extrabold" ><span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ">
+                        Hei, jeg er{" "}
+                    </span>
+                        <br></br>
+                        <TypeAnimation
+                            sequence={[
+                                // Same substring at the start will only be typed out once, initially
+                                'Tony Lam',
+                                5000, // wait 1s before replacing "Mice" with "Hamsters"
+                                'Arbeidsløs:/',
+                                5000
+                            ]}
+                            wrapper="span"
+                            speed={2}
+                            repeat={Infinity}
+                        />
+                    </h1>
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl ">Informatikk student, studerer datateknologi ved Universitetet i Bergen</p>
                     <div>
                         <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">Ønskeliste</button>
@@ -14,7 +36,7 @@ export default function HeroSection() {
                     </div>
                 </div>
                 <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-                    <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+                    <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative ">
                         <Image
                             src="/images/controller.png"
                             alt="profile picture"
