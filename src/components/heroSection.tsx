@@ -11,9 +11,9 @@ import { GithubIcon, LinkedinIcon, Mail } from "lucide-react";
 
 export default function HeroSection() {
     return (
-        <section className="pt-4">
+        <section>
             <div className="grid grid-cols-1 sm:grid-cols-12">
-                <div className="col-span-7 place-self-center text-center sm:text-left">
+                <div className="col-span-8 place-self-center text-center sm:text-left md:text-left">
                     <h1 className="text-emerald- mb-4 text-4xl sm:text-5lg lg:text-6xl font-extrabold" ><span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 via-purple-500 to-emerald-900 ">
                         Hei, jeg er{" "}
                     </span>
@@ -57,8 +57,8 @@ export default function HeroSection() {
                     </div>
 
                 </div>
-                <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-                    <div className=" overflow-hidden rounded-full border h-72 w-72 ">
+                <div className="col-span-4 place-self-center mt-4 lg:mt-0 ">
+                    <div className=" overflow-hidden rounded-full  border-4  h-72 w-72 ">
                         <Image
                             src="/images/profile-pic.jpg"
                             alt="profile picture"
