@@ -31,10 +31,10 @@ export default function HeroSection() {
                             repeat={Infinity}
                         />
                     </h1>
-                    <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl ">Informatikk student, studerer datateknologi ved Universitetet i Bergen</p>
+                    <p className="dark:text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl ">Informatikk student, studerer datateknologi ved Universitetet i Bergen</p>
                     <div className="flex items-end sm:flex-row gap-2">
                         <a href="https://onsk.no/lister/510-y6r">
-                            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-emerald-500 via-purple-500 to-emerald-900 hover:bg-orange-500 text-white">
+                            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-emerald-500 via-purple-500 to-emerald-900 hover:bg-orange-500 dark:text-white text-black">
                                 Ønskeliste
                             </button>
                         </a>
@@ -57,8 +57,8 @@ export default function HeroSection() {
                     </div>
 
                 </div>
-                <div className="col-span-4 place-self-center mt-4 lg:mt-0 ">
-                    <div className=" overflow-hidden rounded-full  border-4  h-72 w-72 ">
+                <div className="col-span-4 mt-4 lg:mt-0 ">
+                    <div className=" overflow-hidden rounded-full border-black dark:border-white border-4  h-72 w-72 ">
                         <Image
                             src="/images/profile-pic.jpg"
                             alt="profile picture"
