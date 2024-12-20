@@ -100,7 +100,9 @@ export default function Snake() {
     //spawner eple på brett
     useEffect(() => {
         generateApple();
-    }, []);
+    }, [
+
+    ]);
 
     //autofokuser spillet ved start av spill
     useEffect(() => {
