@@ -1,4 +1,4 @@
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import NavBar from "@/components/navBar";
 
@@ -21,10 +21,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-
-          <NavBar />
+          <NavBar/>
           {children}
         </ThemeProvider>
+
         
 
 

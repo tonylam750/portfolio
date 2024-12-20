@@ -1,5 +1,4 @@
-
-'use client'
+"use client";
 import Image from "next/image";
 import { TypeAnimation } from 'react-type-animation';
 import { GithubIcon, LinkedinIcon, Mail } from "lucide-react";
@@ -43,12 +42,12 @@ export default function HeroSection() {
                                 <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-4 py-2"> <Mail></Mail></span>
                             </button>
                         </a>
-                        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BVye7PVgYSDekeBkiULZVFA%3D%3D">
+                        <a href="https://github.com/tonylam750">
                             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br  from-emerald-500 via-purple-500 to-emerald-900 hover:bg-slate-800 text-white mt-3">
                                 <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-4 py-2"> <GithubIcon></GithubIcon></span>
                             </button>
                         </a>
-                        <a href="https://github.com/tonylam750">
+                        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BVye7PVgYSDekeBkiULZVFA%3D%3D">
                             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br  from-emerald-500 via-purple-500 to-emerald-900 hover:bg-slate-800 text-white mt-3">
                                 <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-4 py-2"> <LinkedinIcon></LinkedinIcon></span>
                             </button>
@@ -57,7 +56,7 @@ export default function HeroSection() {
                     </div>
 
                 </div>
-                <div className="col-span-4 mt-4 lg:mt-0 ">
+                <div className="col-span-4 mt-4 place-self-center lg:mt-0 ">
                     <div className=" overflow-hidden rounded-full border-black dark:border-white border-4  h-72 w-72 ">
                         <Image
                             src="/images/profile-pic.jpg"

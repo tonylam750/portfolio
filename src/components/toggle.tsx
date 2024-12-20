@@ -8,17 +8,20 @@ import { Switch } from "@/components/ui/switch";
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
+  const [isDarkMode, setIsDarkMode] = React.useState(false);
 
-  const isDarkMode =
-    theme === "dark" ||
-    (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  React.useEffect(() => {
+    const isDark =
+      theme === "dark" ||
+      (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches);
+    setIsDarkMode(isDark);
+  }, [theme]);
 
   const toggleTheme = () => {
-    if (isDarkMode) {
-      setTheme("light");;
-    } else {
-      setTheme("dark");
-    }
+    const newTheme = isDarkMode ? "light" : "dark";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+    setIsDarkMode(!isDarkMode);
   };
 
   return (
