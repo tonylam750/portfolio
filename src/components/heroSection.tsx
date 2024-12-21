@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import { TypeAnimation } from 'react-type-animation';
-import { GithubIcon, LinkedinIcon, Mail } from "lucide-react";
+import { GithubIcon, LinkedinIcon, Mail, MapPin } from "lucide-react";
+
 
 
 
@@ -31,6 +32,7 @@ export default function HeroSection() {
                         />
                     </h1>
                     <p className="dark:text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl ">Informatikk student, studerer datateknologi ved Universitetet i Bergen</p>
+                    <div className="mb-2 flex"><MapPin></MapPin> <a className="ml-4 hover:text-slate-500" href="https://www.google.no/maps/@60.3947008,5.3379072,14z?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">Bergen, Sentrum</a></div>
                     <div className="flex items-end sm:flex-row gap-2">
                         <a href="https://onsk.no/lister/510-y6r">
                             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-emerald-500 via-purple-500 to-emerald-900 hover:bg-orange-500 dark:text-white text-black">
