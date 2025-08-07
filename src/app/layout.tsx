@@ -1,32 +1,23 @@
-import { ThemeProvider } from "@/components/theme-provider";
+
 import "./globals.css";
 import NavBar from "@/components/navBar";
 
 
 
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+export default function RootLayout({children,}: Readonly<{children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
 
-      <body>
+      <body className="flex flex-col h-screen">
         
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+      
           <NavBar/>
+          <main className="flex-1 overflow-auto">
+
           {children}
-        </ThemeProvider>
-
-        
-
+          </main>
 
       </body>
       
