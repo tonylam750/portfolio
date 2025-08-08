@@ -8,9 +8,9 @@ import Link from "next/link";
 
 export default function HeroSection() {
     return (
-        <section className="">
-            <div className="grid grid-cols-1 md:grid-cols-12 sm:grid-cols-12 ">
-                <div className="col-span-8 place-self-center text-center sm:text-left md:text-left flex flex-col item-center justify-center" >
+        <section className=" mt-20 ml-10">
+            <div className=" grid grid-cols-1 sm:grid-cols-10 ">
+                <div className="  col-span-6 text-center sm:text-left md:text-left " >
                     <h1 className="text-emerald- mb-4 text-4xl sm:text-5lg lg:text-6xl font-extrabold mr-10" ><span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 via-purple-500 to-emerald-900 ">
                         Hei, jeg er{" "}
                     </span>
@@ -28,10 +28,10 @@ export default function HeroSection() {
                         />
                     </h1>
                     <p className=" sm:text-lg mb-6 lg:text-xl ">Informatikk student, studerer datateknologi ved Universitetet i Bergen</p>
-                    <div className="mb-2 items-center md:justify-start justify-center flex"><MapPin></MapPin> <a className="ml-4 hover:text-slate-500" href="https://www.google.no/maps/@60.3947008,5.3379072,14z?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">Bergen, Sentrum</a></div>
-                    <div className="flex items-end md:justify-start sm:justify-center sm:flex-row gap-2">
+                    <div className=" mb-2 items-center sm:justify-start justify-center flex"><MapPin></MapPin> <a className="ml-4 hover:text-slate-500" href="https://www.google.no/maps/@60.3947008,5.3379072,14z?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">Bergen, Sentrum</a></div>
+                    <div className=" flex items-center md:justify-start sm:justify-center sm:flex-row gap-2">
                         <Link href="/prosjekter">
-                            <button className=" md:text-lg text-xs px-5 py-3 w-full sm:w-fit rounded-full mr-4 bg-[#53645c]  shadow-md shadow-emerald-800 hover:shadow-emerald-300 ">
+                            <button className=" md:text-lg sml:text-lg text-sm px-5 py-3 w-full sm:w-fit rounded-full mr-4 bg-[#53645c]  shadow-md shadow-emerald-800 hover:shadow-emerald-300 ">
                                Se prosjekter
                             </button>
                         </Link>
@@ -54,7 +54,7 @@ export default function HeroSection() {
                     </div>
 
                 </div>
-                <div className="col-span-4 mt-4 place-self-center lg:mt-0 ">
+                <div className=" col-span-4 mt-4 place-self-center lg:mt-0 ">
                     <div className=" overflow-hidden rounded-full border-4  h-72 w-72 ">
                         <Image
                             src="/images/profile-pic.jpg"

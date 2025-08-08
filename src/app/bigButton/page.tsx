@@ -1,9 +1,6 @@
 "use client"
 import { useWindowSize } from 'react-use'
 import Confetti from 'react-confetti'
-
-
-import RedButton from "@/components/bigRedButton"
 import { useRef, useState } from "react"
 
 export default function BigRedButton(){
@@ -18,7 +15,7 @@ export default function BigRedButton(){
      
     function buttonPressed() {
          audioRef.current?.play().catch((e) => {
-      // catch in case the browser blocked autoplay
+    
       console.warn('Audio play failed:', e)
     })
     setPressed(true)
@@ -29,7 +26,7 @@ export default function BigRedButton(){
     return (
         <>
         {pressed? <Confetti width={width} height={height}/> :""}
-        <div className="flex-1 flex h-full justify-center items-center ">
+        <div className=" flex-1 flex h-full justify-center items-center ">
 
                    <button disabled={pressed} onClick={buttonPressed} className={` rounded-full   w-[400px]  h-[400px] bg-[#fe5864] border-none  text-white 
                                       shadow-[0_16px_0_#b8181d] box-shadow: 0px 10px 0px #b8181d  mb-[5px] transition-[box-shadow,transform]  cursor-pointer 
@@ -40,7 +37,7 @@ export default function BigRedButton(){
                                        `}
                                       >
                                     
-                                     {pressed ? "bruh" : "IKKE TRYKK"}
+                                     {pressed ? "Gratuler du gjorde den ene tingen du ikke skulle" : "IKKE TRYKK"}
                   </button>
         </div>
         </>
