@@ -35,17 +35,17 @@ export default function HeroSection() {
                                Se prosjekter
                             </button>
                         </Link>
-                        <a href="mailto:tonylam750@outlook.com">
+                        <a target="_blank" href="mailto:tonylam750@outlook.com">
                             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br  from-emerald-500 via-purple-500 to-emerald-900 hover:bg-slate-800 mt-3">
                                 <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-4 py-2"> <Mail></Mail></span>
                             </button>
                         </a>
-                        <a href="https://github.com/tonylam750">
+                        <a target="_blank" href="https://github.com/tonylam750">
                             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br  from-emerald-500 via-purple-500 to-emerald-900 hover:bg-slate-800 mt-3">
                                 <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-4 py-2"> <GithubIcon></GithubIcon></span>
                             </button>
                         </a>
-                        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BVye7PVgYSDekeBkiULZVFA%3D%3D">
+                        <a target="_blank" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BVye7PVgYSDekeBkiULZVFA%3D%3D">
                             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br  from-emerald-500 via-purple-500 to-emerald-900 hover:bg-slate-800 mt-3">
                                 <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-4 py-2"> <LinkedinIcon></LinkedinIcon></span>
                             </button>
